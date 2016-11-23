@@ -16,7 +16,7 @@
   		<input type="text" ng-model="lname" placeholder="Last Name" />
   		<button type="submit" value="Show" ng-click="showTwoWay()">Submit</button>
   		
-  		<div ng-repeat="x in personObj track by $index">{{x.fname}}, {{x.lname}}</div>
+  		<div ng-repeat="x in personObj  | orderBy: 'fname' track by $index">{{x.fname}}, {{x.lname}}</div>
   		
 	</div>
 
